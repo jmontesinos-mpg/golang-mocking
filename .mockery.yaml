@@ -1,0 +1,8 @@
+with-expecter: True
+dir: "{{.InterfaceDir}}/mocks"
+filename: "mockery_{{.InterfaceName}}.go"
+mockname: "{{.Mock}}ery{{.InterfaceName}}"
+outpkg: "mocks"
+all: True
+packages:
+  jmontesinos/golang-mocking/test:
